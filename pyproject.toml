@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evonova-causal-guard"
+version = "1.0.0"
+description = "Zero-dependency Pearl do-calculus DAG verifier, Tabu memory archive, and multi-agent debate arbiter for curbing LLM causal hallucinations."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [
+  {name = "Roman Pokushko", email = "pokusko.roman@gmail.com"}
+]
+keywords = [
+  "causal-inference",
+  "do-calculus",
+  "pearl-dag",
+  "multi-agent-debate",
+  "hallucination-guard",
+  "ai-resilience",
+  "neuro-symbolic"
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.4"]
+
+[project.urls]
+Homepage = "https://github.com/pokushko/evonova-causal-guard"
+Repository = "https://github.com/pokushko/evonova-causal-guard"
+Ecosystem = "https://github.com/pokushko/awesome-autonomous-agent-resilience"
+
+[tool.setuptools.packages.find]
+include = ["evonova_causal_guard*"]
